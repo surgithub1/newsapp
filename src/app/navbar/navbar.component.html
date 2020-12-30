@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+
+    <section class="wrapper">
+  
+ 
+  
+      <h2 class="sentence">
+        <div class="pushEffect">
+          <span>MorSurguja</span>
+          <span>Surguja</span>      
+          <span>मोरसरगुजा</span>
+          <span>Fast News</span>
+    
+      
+        </div>
+      </h2>
+     
+    </section>
+    
+
+    <!-- <span>Morsurguja</span> -->
+    <span class="example-spacer"></span>
+   
+
+    <a class="example-link" routerLink="/" mat-button></a>
+    <!-- <a class="example-link" routerLink="/posts" mat-button>Posts</a> -->
+    <!-- <a class="example-link" href="https://github.com/geeksamu/angular-5-article-series" mat-button>
+      <mat-icon>star</mat-icon>  
+      Github
+    </a> -->
+    <mat-slide-toggle [checked]="isThemeDark | async" (change)="toggleDarkTheme($event.checked)">Dark theme</mat-slide-toggle>
+  </mat-toolbar-row>
+</mat-toolbar>
