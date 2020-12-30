@@ -216,7 +216,7 @@ module.exports = "<h1></h1>\r\n\r\n<h2 mat-dialog-title>{{ data?.title }}</h2>\r
 /***/ "./src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div class=\"homebtn\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n  <a routerLink=\"/posts\" mat-raised-button color=\"primary\">Choose News Source</a>\r\n</div> -->\r\n\r\n<!-- <div class=\"loader\" *ngIf=\"!((news.articles)?.length > 0)\">\r\n  <mat-spinner></mat-spinner>\r\n</div> -->\r\n<br/>\r\n<div class=\"container\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"10%\" fxLayoutAlign=\"center\">\r\n  \r\n\r\n  \r\n  <mat-chip-list>\r\n    \r\n      <mat-chip *ngFor=\"let chip of availableColors\" [id]=\"chip.id\" [color]=\"chip.color\" [selected]=\"chip.state\" (selectionChange)=\"changeSelected($event)\" (click)=\"chip.state=!chip.state\">\r\n      \r\n        {{chip.name}}\r\n       \r\n      </mat-chip>\r\n     \r\n\r\n  </mat-chip-list>\r\n\r\n</div>\r\n<br/>\r\n\r\n\r\n<div class=\"container\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n\r\n  <div *ngFor=\"let post of news.articles\" fxFlex=\"20%\">\r\n    <mat-card *ngIf=\"category != '10004'\">\r\n      <img mat-card-image src=\"{{post.urlToImage}}\" onError=\"this.src='/assets/blank.png';\">\r\n      <div class=\"cardbody\">\r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <p>{{post.description}}</p>\r\n        </mat-card-content>\r\n      </div>\r\n      <mat-card-actions align=\"end\">\r\n        <button mat-raised-button color=\"accent\" (click)=\"openDialog(post)\">Read More</button>\r\n        <!-- <a href=\"{{post.url}}\" target=\"_balnk\" mat-raised-button color=\"accent\">Read More</a> -->\r\n      </mat-card-actions>\r\n    </mat-card>\r\n\r\n\r\n    <mat-card *ngIf=\"category == '10004'\">\r\n      <!-- <img mat-card-image src=\"{{post.urlToImage}}\" onError=\"this.src='/assets/blank.png';\"> -->\r\n      <div class=\"cardbody\">\r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <iframe width=\"100%\" [src]=\"safeURL\" >\r\n          </iframe>\r\n        </mat-card-content>\r\n      </div>\r\n     \r\n    </mat-card>\r\n    <!-- <mat-card *ngIf=\"category === '10004'\">\r\n     \r\n      <div>       \r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <iframe src=\"https://www.youtube.com/embed/tgbNymZ7vqY\">\r\n          </iframe>\r\n        </mat-card-content>\r\n      </div>\r\n\r\n      <mat-card-actions align=\"end\">\r\n        <button mat-raised-button color=\"accent\" (click)=\"openDialog(post)\">Read More</button>\r\n      </mat-card-actions>\r\n    </mat-card> -->\r\n\r\n  </div>\r\n\r\n  <!-- <div *ngFor=\"let post of news.articles\">\r\n    <mat-card class=\"example-card\" *ngIf=\"category === '10004'\">\r\n      <mat-card-header>\r\n      \r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n    \r\n      </mat-card-header>\r\n      <mat-card-content>\r\n        <iframe src=\"https://www.youtube.com/watch?v=Pdfvy-kSEbU&list=RDPdfvy-kSEbU&start_radio=\">\r\n        </iframe>\r\n    \r\n      </mat-card-content>\r\n    \r\n    </mat-card>\r\n  </div> -->\r\n  \r\n\r\n</div>\r\n"
+module.exports = "<!-- <div class=\"homebtn\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n  <a routerLink=\"/posts\" mat-raised-button color=\"primary\">Choose News Source</a>\r\n</div> -->\r\n\r\n<!-- <div class=\"loader\" *ngIf=\"!((news.articles)?.length > 0)\">\r\n  <mat-spinner></mat-spinner>\r\n</div> -->\r\n<br/>\r\n<div class=\"container\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n  \r\n\r\n  <button mat-raised-button (click)=\"changeSelected('10000')\">सरगुजा</button>\r\n  <button mat-raised-button color=\"primary\"(click)=\"changeSelected('10001')\">भारत</button>\r\n  <button mat-raised-button color=\"accent\" (click)=\"changeSelected('10002')\">विदेश</button>\r\n  <button mat-raised-button color=\"warn\"(click)=\"changeSelected('10003')\">मनोरंजन</button>\r\n  <button mat-raised-button color=\"warn\"(click)=\"changeSelected('10004')\">गरम वीडियो</button>\r\n  <button mat-raised-button color=\"warn\"(click)=\"changeSelected('10005')\">सरकारी नौकरी</button>\r\n  <!-- <mat-chip-list>\r\n    \r\n      <mat-chip *ngFor=\"let chip of availableColors\" [id]=\"chip.id\" [color]=\"chip.color\"  (selectionChange)=\"changeSelected($event)\" (click)=\"chip.state =! chip.state\">\r\n      \r\n        {{chip.name}}\r\n       \r\n      </mat-chip>\r\n     \r\n\r\n  </mat-chip-list> -->\r\n\r\n</div>\r\n<br/>\r\n\r\n\r\n<div class=\"container\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n\r\n  <div *ngFor=\"let post of news.articles\" fxFlex=\"20%\">\r\n    <mat-card>\r\n      <img mat-card-image src=\"{{post.urlToImage}}\" onError=\"this.src='/assets/blank.png';\">\r\n      <div class=\"cardbody\">\r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <p>{{post.description}}</p>\r\n        </mat-card-content>\r\n      </div>\r\n      <mat-card-actions align=\"end\">\r\n        <button mat-raised-button color=\"accent\" (click)=\"openDialog(post)\">Read More</button>\r\n        <!-- <a href=\"{{post.url}}\" target=\"_balnk\" mat-raised-button color=\"accent\">Read More</a> -->\r\n      </mat-card-actions>\r\n    </mat-card>\r\n\r\n\r\n    <!-- <mat-card *ngIf=\"category == '10004'\">\r\n      <img mat-card-image src=\"{{post.urlToImage}}\" onError=\"this.src='/assets/blank.png';\">\r\n      <div class=\"cardbody\">\r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <iframe width=\"100%\" [src]=\"safeURL\" >\r\n          </iframe>\r\n        </mat-card-content>\r\n      </div>\r\n     \r\n    </mat-card> -->\r\n    <!-- <mat-card *ngIf=\"category === '10004'\">\r\n     \r\n      <div>       \r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <iframe src=\"https://www.youtube.com/embed/tgbNymZ7vqY\">\r\n          </iframe>\r\n        </mat-card-content>\r\n      </div>\r\n\r\n      <mat-card-actions align=\"end\">\r\n        <button mat-raised-button color=\"accent\" (click)=\"openDialog(post)\">Read More</button>\r\n      </mat-card-actions>\r\n    </mat-card> -->\r\n\r\n  </div>\r\n\r\n  <!-- <div *ngFor=\"let post of news.articles\">\r\n    <mat-card class=\"example-card\" *ngIf=\"category === '10004'\">\r\n      <mat-card-header>\r\n      \r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n    \r\n      </mat-card-header>\r\n      <mat-card-content>\r\n        <iframe src=\"https://www.youtube.com/watch?v=Pdfvy-kSEbU&list=RDPdfvy-kSEbU&start_radio=\">\r\n        </iframe>\r\n    \r\n      </mat-card-content>\r\n    \r\n    </mat-card>\r\n  </div> -->\r\n  \r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -263,7 +263,7 @@ var HomeComponent = /** @class */ (function () {
         this._sanitizer = _sanitizer;
         this.news = [];
         this.availableColors = [
-            { id: "10000", name: 'सरगुजा', color: 'primary', state: true },
+            { id: "10000", name: 'सरगुजा', color: 'primary', state: false },
             { id: "10001", name: 'भारत', color: 'warn', state: false },
             { id: "10002", name: 'विदेश', color: 'primary', state: false },
             { id: "10003", name: 'मनोरंजन', color: 'warn', state: false },
@@ -282,49 +282,69 @@ var HomeComponent = /** @class */ (function () {
         // 		response => this.news = response.json()
         // );
     };
-    HomeComponent.prototype.changeSelected = function (e) {
+    HomeComponent.prototype.changeSelected = function (value) {
         var _this = this;
         this.news = [];
-        this.category = e.source._elementRef.nativeElement.id;
-        for (var i = 0; i < this.availableColors.length; i++) {
-            var chip = this.availableColors[i];
-            if (chip.id == this.category) {
-                // alert("selected");
-                chip.state = true;
-            }
+        this.category = value;
+        //e.source._elementRef.nativeElement.id;
+        // for(var i = 0; i < this.availableColors.length; i++) {
+        //   let chip = this.availableColors[i];
+        //   if (chip.id == this.category) {
+        //    // alert("selected");
+        //     chip.state = true;
+        //   } 
+        // } 
+        if (this.category == "10000") {
+            this.httpClient.get("assets/newsfeed.json").subscribe(function (data) {
+                _this.news = data;
+            });
+            //  this.newsService.getTopHeadLines()
+            // .subscribe(
+            //   response => this.news = response.json());
         }
-        if (this.category == "10002" && e.selected) {
-            this.newsService.getTopHeadLines()
-                .subscribe(function (response) { return _this.news = response.json(); });
+        else if (this.category == "10002") {
+            this.httpClient.get("assets/newsfeed_world.json").subscribe(function (data) {
+                _this.news = data;
+            });
+            //  this.newsService.getTopHeadLines()
+            // .subscribe(
+            //   response => this.news = response.json());
         }
-        if (this.category == "10001" && e.selected) {
-            this.newsService.getTopInHeadLines()
-                .subscribe(function (response) { return _this.news = response.json(); });
+        if (this.category == "10001") {
+            this.httpClient.get("assets/newsfeed_india.json").subscribe(function (data) {
+                _this.news = data;
+            });
+            // this.newsService.getTopInHeadLines()
+            // .subscribe(
+            //   response => this.news = response.json());
             //   this.newsService.getNewBySource("google-news-in")
             //  .subscribe(
             //    response => this.news = response.json());
         }
-        if (this.category == "10003" && e.selected) {
-            this.newsService.getTopEntertainmentHeadLines()
-                .subscribe(function (response) { return _this.news = response.json(); });
+        if (this.category == "10003") {
+            this.httpClient.get("assets/newsfeed_entertainment.json").subscribe(function (data) {
+                _this.news = data;
+            });
+            // this.newsService.getTopEntertainmentHeadLines()
+            // .subscribe(
+            //   response => this.news = response.json());
             //   this.newsService.getNewBySource("google-news-in")
             //  .subscribe(
             //    response => this.news = response.json());
         }
-        else if (this.category == "10004" && e.selected) {
+        else if (this.category == "10004") {
             // this.httpClient.get("assets/hot_video_newsfeed.json").subscribe(data =>{    
             //   this.news =  data;
             //   this.safeURL = "https://www.youtube.com/watch?v=JFcgOboQZ08&list=RDJFcgOboQZ08&start_radio=1";
             //   //this._sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/watch?v=Pdfvy-kSEbU&list=RDPdfvy-kSEbU&start_radio=");
             // })
         }
-        else {
-            this.httpClient.get("assets/newsfeed.json").subscribe(function (data) {
-                _this.news = data;
-                e.selected = true;
-            });
-        }
-        this.selected = e.value;
+        //else {
+        //     this.httpClient.get("assets/newsfeed.json").subscribe(data =>{    
+        //     this.news =  data;
+        //   })
+        //   }
+        //this.selected = e.value;
     };
     HomeComponent.prototype.openDialog = function (post) {
         // console.log("testingf"+JSON.stringify(post));
