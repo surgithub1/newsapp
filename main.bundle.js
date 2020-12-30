@@ -65,7 +65,7 @@ var AppRoutingModule = /** @class */ (function () {
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div [ngClass]=\"{'dark-theme': isThemeDark | async}\">\r\n  <div class=\"mat-app-background\">\r\n    <app-navbar></app-navbar>\r\n    <router-outlet></router-outlet>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div [ngClass]=\"{'dark-theme': true}\">\r\n  <div class=\"mat-app-background\">\r\n    <app-navbar></app-navbar>\r\n    <router-outlet></router-outlet>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -139,6 +139,7 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__navbar_navbar_component__ = __webpack_require__("./src/app/navbar/navbar.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_theme_service__ = __webpack_require__("./src/app/services/theme.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_news_service__ = __webpack_require__("./src/app/services/news.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_material_chips__ = __webpack_require__("./node_modules/@angular/material/esm5/chips.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -153,6 +154,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+//import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 
 
 
@@ -169,7 +172,8 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             exports: [
-                __WEBPACK_IMPORTED_MODULE_11__angular_material_dialog__["b" /* MatDialogModule */]
+                __WEBPACK_IMPORTED_MODULE_11__angular_material_dialog__["c" /* MatDialogModule */],
+                __WEBPACK_IMPORTED_MODULE_18__angular_material_chips__["a" /* MatChipsModule */]
             ],
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* AppComponent */],
@@ -205,21 +209,21 @@ var AppModule = /** @class */ (function () {
 /***/ "./src/app/home/dialog-content-example-dialog.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>कहानी एक 'आदमख़ोर पुलिस वाले' की जिसे अदालत ने बरी कर दिया था</h2>\r\n<mat-dialog-content class=\"mat-typography\">\r\n    <mat-card >\r\n        <!-- <div class=\"cardbody\">\r\n            \r\n      \r\n        <mat-card-header>\r\n            \r\n            <mat-card-title>कहानी एक 'आदमख़ोर पुलिस वाले' की जिसे अदालत ने बरी कर दिया था</mat-card-title>\r\n          \r\n        \r\n          </mat-card-header>\r\n        </div>     -->\r\n        <img mat-card-image src=\"https://ichef.bbci.co.uk/news/800/cpsprodpb/1181D/production/_116290717_juicio.jpg\" onError=\"this.src='/assets/blank.png';\">\r\n        <div class=\"cardbody\">\r\n          <!-- <mat-card-title>कहानी एक 'आदमख़ोर पुलिस वाले' की जिसे अदालत ने बरी कर दिया था</mat-card-title> -->\r\n          <mat-card-content>\r\n          <p>\r\n            जब से इंटरनेट हमारे घरों में दाख़िल हुआ है, एक छोटी सी बात कई घरों में बहुत से परिवारों के साथ हो रही है. कैथलीन मैंगन वैल के साथ भी कुछ ऐसा ही हुआ. उनके पति इंटरनेट पर वक़्त गुज़ारा करते थे और ये बात कैथलीन को कहीं खटक रही थी. एक रोज़ कैथलीन का कम्प्यूटर ख़राब हो गया तो वो अपने पति का सिस्टम इस्तेमाल करने लगीं.\r\n\r\n            कैथलीन को लगता था कि उनके पति का किसी दूसरी औरत के साथ चक्कर चल रहा है. अपने इस शक को दूर करने के लिए कैथलीन ने अपने पति के कम्प्यूटर में एक ऐसा सॉफ़्टवेयर इंस्टॉल कर दिया जिससे वे उन पर नज़र रख सकती थीं. लेकिन इस जासूसी की वजह से जो बात उनके सामने आने वाली थी, इसका उन्हें दूर-दूर तक अंदाज़ा नहीं था.\r\n            \r\n            कैथलीन के पति इंटरनेट पर यंत्रणा और यौन हमले का शिकार होती महिलाओं की तस्वीरें खोज रहे थे. इतना ही नहीं, वो शख़्स जिसे कैथलीन अपना पति मानती थीं, वो इंटरनेट पर 'किसी महिला को किडनैप करने', 'इंसानी गोश्त को पकाने की रेसिपी' और 'गोरे लोगों की ग़ुलामी' खोज रहा था.\r\n\r\n          </p>\r\n\r\n          <p>\r\n\r\n            कैथलीन को लगता था कि उनके पति का किसी दूसरी औरत के साथ चक्कर चल रहा है. अपने इस शक को दूर करने के लिए कैथलीन ने अपने पति के कम्प्यूटर में एक ऐसा सॉफ़्टवेयर इंस्टॉल कर दिया जिससे वे उन पर नज़र रख सकती थीं. लेकिन इस जासूसी की वजह से जो बात उनके सामने आने वाली थी, इसका उन्हें दूर-दूर तक अंदाज़ा नहीं था.\r\n            </p>\r\n            \r\n            <p>\r\n            कैथलीन के पति इंटरनेट पर यंत्रणा और यौन हमले का शिकार होती महिलाओं की तस्वीरें खोज रहे थे. इतना ही नहीं, वो शख़्स जिसे कैथलीन अपना पति मानती थीं, वो इंटरनेट पर 'किसी महिला को किडनैप करने', 'इंसानी गोश्त को पकाने की रेसिपी' और 'गोरे लोगों की ग़ुलामी' खोज रहा था.\r\n            </p>\r\n            <p>\r\n            अजीब तरह की यौन इच्छाओं को स्पेस देने वाले एक वेब फ़ोरम पर कैथलीन के पति ने 'गर्लमीट हंटर' यूज़रनेम से इंसानी गोश्त खाने और किसी पर यौन हमला करने से जुड़े अपने अनुभवों के बारे में बहुत विस्तार से पोस्ट किए थे.\r\n            </p>\r\n\r\n          <img mat-card-image src=\"https://ichef.bbci.co.uk/news/800/cpsprodpb/13F2D/production/_116290718_gettyimages-1175885065.jpg\" onError=\"this.src='/assets/blank.png';\">\r\n\r\n          <p>\r\n            जब से इंटरनेट हमारे घरों में दाख़िल हुआ है, एक छोटी सी बात कई घरों में बहुत से परिवारों के साथ हो रही है. कैथलीन मैंगन वैल के साथ भी कुछ ऐसा ही हुआ. उनके पति इंटरनेट पर वक़्त गुज़ारा करते थे और ये बात कैथलीन को कहीं खटक रही थी. एक रोज़ कैथलीन का कम्प्यूटर ख़राब हो गया तो वो अपने पति का सिस्टम इस्तेमाल करने लगीं.\r\n\r\n            कैथलीन को लगता था कि उनके पति का किसी दूसरी औरत के साथ चक्कर चल रहा है. अपने इस शक को दूर करने के लिए कैथलीन ने अपने पति के कम्प्यूटर में एक ऐसा सॉफ़्टवेयर इंस्टॉल कर दिया जिससे वे उन पर नज़र रख सकती थीं. लेकिन इस जासूसी की वजह से जो बात उनके सामने आने वाली थी, इसका उन्हें दूर-दूर तक अंदाज़ा नहीं था.\r\n            \r\n            कैथलीन के पति इंटरनेट पर यंत्रणा और यौन हमले का शिकार होती महिलाओं की तस्वीरें खोज रहे थे. इतना ही नहीं, वो शख़्स जिसे कैथलीन अपना पति मानती थीं, वो इंटरनेट पर 'किसी महिला को किडनैप करने', 'इंसानी गोश्त को पकाने की रेसिपी' और 'गोरे लोगों की ग़ुलामी' खोज रहा था.\r\n\r\n          </p>\r\n\r\n          </mat-card-content>\r\n        </div>\r\n  \r\n\r\n      </mat-card>\r\n  \r\n\r\n \r\n</mat-dialog-content>\r\n<mat-dialog-actions align=\"end\">\r\n  <button mat-button mat-dialog-close>Cancel</button>\r\n  <!-- <button mat-button [mat-dialog-close]=\"true\" cdkFocusInitial>Install</button> -->\r\n</mat-dialog-actions>\r\n\r\n\r\n<!-- Copyright 2020 Google LLC. All Rights Reserved.\r\n    Use of this source code is governed by an MIT-style license that\r\n    can be found in the LICENSE file at http://angular.io/license -->"
+module.exports = "<h1></h1>\r\n\r\n<h2 mat-dialog-title>{{ data?.title }}</h2>\r\n<mat-dialog-content class=\"mat-typography\">\r\n  <mat-card>\r\n    <!-- <div class=\"cardbody\">\r\n            \r\n      \r\n        <mat-card-header>\r\n            \r\n            <mat-card-title>कहानी एक 'आदमख़ोर पुलिस वाले' की जिसे अदालत ने बरी कर दिया था</mat-card-title>\r\n          \r\n        \r\n          </mat-card-header>\r\n        </div>     -->\r\n    <img mat-card-image src=\"{{ data?.topImage }}\" onError=\"this.src='/assets/blank.png';\">\r\n    <div class=\"cardbody\">\r\n      <!-- <mat-card-title>कहानी एक 'आदमख़ोर पुलिस वाले' की जिसे अदालत ने बरी कर दिया था</mat-card-title> -->\r\n      <mat-card-content>\r\n        <b>\r\n          {{ data?.content.boldSection }}\r\n        </b>\r\n        <br/>\r\n        <br/>\r\n        <p>\r\n          {{ data?.content.section1 }}\r\n        </p>\r\n\r\n        <p>\r\n          {{ data?.content.section2 }}\r\n        </p>\r\n        <img mat-card-image src=\"{{ data?.content.imgURL1}}\" onError=\"this.src='/assets/blank.png';\">\r\n\r\n       \r\n        \r\n\r\n        <p>\r\n          {{ data?.content.section3 }}\r\n        </p>\r\n\r\n        <p>\r\n          {{ data?.content.section4 }}\r\n        </p>\r\n        \r\n        <img mat-card-image src=\"{{ data?.content.imgURL1}}\" onError=\"this.src='/assets/blank.png';\">\r\n\r\n        <p>\r\n          {{ data?.content.section5 }}\r\n        </p>\r\n      </mat-card-content>\r\n    </div>\r\n\r\n\r\n  </mat-card>\r\n\r\n\r\n\r\n</mat-dialog-content>\r\n<mat-dialog-actions align=\"end\">\r\n  <button mat-button mat-dialog-close>Done</button>\r\n  <!-- <button mat-button [mat-dialog-close]=\"true\" cdkFocusInitial>Install</button> -->\r\n</mat-dialog-actions>\r\n\r\n\r\n<!-- Copyright 2020 Google LLC. All Rights Reserved.\r\n    Use of this source code is governed by an MIT-style license that\r\n    can be found in the LICENSE file at http://angular.io/license -->"
 
 /***/ }),
 
 /***/ "./src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div class=\"homebtn\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n  <a routerLink=\"/posts\" mat-raised-button color=\"primary\">Choose News Source</a>\r\n</div> -->\r\n\r\n<!-- <div class=\"loader\" *ngIf=\"!((news.articles)?.length > 0)\">\r\n  <mat-spinner></mat-spinner>\r\n</div> -->\r\n<br/>\r\n<div class=\"container\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n\r\n  <div *ngFor=\"let post of news.articles\" fxFlex=\"20%\">\r\n<!--\r\n  class=singleNews\r\n--> \r\n\r\n    <mat-card >\r\n      <img mat-card-image src=\"{{post.urlToImage}}\" onError=\"this.src='/assets/blank.png';\">\r\n      <div class=\"cardbody\">\r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <p>{{post.description}}</p>\r\n        </mat-card-content>\r\n      </div>\r\n\r\n      <mat-card-actions align=\"end\">\r\n        <button mat-raised-button color=\"accent\" (click)=\"openDialog()\">Read More</button>\r\n        <!-- <a href=\"{{post.url}}\" target=\"_balnk\" mat-raised-button color=\"accent\">Read More</a> -->\r\n      </mat-card-actions>\r\n    </mat-card>\r\n\r\n  </div>\r\n\r\n</div>\r\n"
+module.exports = "<!-- <div class=\"homebtn\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n  <a routerLink=\"/posts\" mat-raised-button color=\"primary\">Choose News Source</a>\r\n</div> -->\r\n\r\n<!-- <div class=\"loader\" *ngIf=\"!((news.articles)?.length > 0)\">\r\n  <mat-spinner></mat-spinner>\r\n</div> -->\r\n<br/>\r\n<div class=\"container\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"10%\" fxLayoutAlign=\"center\">\r\n  \r\n\r\n  \r\n  <mat-chip-list>\r\n    \r\n      <mat-chip *ngFor=\"let chip of availableColors\" [id]=\"chip.id\" [color]=\"chip.color\" [selected]=\"chip.state\" (selectionChange)=\"changeSelected($event)\" (click)=\"chip.state=!chip.state\">\r\n      \r\n        {{chip.name}}\r\n       \r\n      </mat-chip>\r\n     \r\n\r\n  </mat-chip-list>\r\n\r\n</div>\r\n<br/>\r\n\r\n\r\n<div class=\"container\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n\r\n  <div *ngFor=\"let post of news.articles\" fxFlex=\"20%\">\r\n    <mat-card *ngIf=\"category != '10004'\">\r\n      <img mat-card-image src=\"{{post.urlToImage}}\" onError=\"this.src='/assets/blank.png';\">\r\n      <div class=\"cardbody\">\r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <p>{{post.description}}</p>\r\n        </mat-card-content>\r\n      </div>\r\n      <mat-card-actions align=\"end\">\r\n        <button mat-raised-button color=\"accent\" (click)=\"openDialog(post)\">Read More</button>\r\n        <!-- <a href=\"{{post.url}}\" target=\"_balnk\" mat-raised-button color=\"accent\">Read More</a> -->\r\n      </mat-card-actions>\r\n    </mat-card>\r\n\r\n\r\n    <mat-card *ngIf=\"category == '10004'\">\r\n      <!-- <img mat-card-image src=\"{{post.urlToImage}}\" onError=\"this.src='/assets/blank.png';\"> -->\r\n      <div class=\"cardbody\">\r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <iframe width=\"100%\" [src]=\"safeURL\" >\r\n          </iframe>\r\n        </mat-card-content>\r\n      </div>\r\n     \r\n    </mat-card>\r\n    <!-- <mat-card *ngIf=\"category === '10004'\">\r\n     \r\n      <div>       \r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <iframe src=\"https://www.youtube.com/embed/tgbNymZ7vqY\">\r\n          </iframe>\r\n        </mat-card-content>\r\n      </div>\r\n\r\n      <mat-card-actions align=\"end\">\r\n        <button mat-raised-button color=\"accent\" (click)=\"openDialog(post)\">Read More</button>\r\n      </mat-card-actions>\r\n    </mat-card> -->\r\n\r\n  </div>\r\n\r\n  <!-- <div *ngFor=\"let post of news.articles\">\r\n    <mat-card class=\"example-card\" *ngIf=\"category === '10004'\">\r\n      <mat-card-header>\r\n      \r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n    \r\n      </mat-card-header>\r\n      <mat-card-content>\r\n        <iframe src=\"https://www.youtube.com/watch?v=Pdfvy-kSEbU&list=RDPdfvy-kSEbU&start_radio=\">\r\n        </iframe>\r\n    \r\n      </mat-card-content>\r\n    \r\n    </mat-card>\r\n  </div> -->\r\n  \r\n\r\n</div>\r\n"
 
 /***/ }),
 
 /***/ "./src/app/home/home.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ".singleNews {\n  margin-bottom: 15px; }\n  .singleNews img {\n    height: 200px; }\n  .singleNews mat-card-title {\n    font-size: 16px;\n    font-weight: bold; }\n  .singleNews .cardbody {\n    height: 100px;\n    overflow-y: auto;\n    margin: 0 -15px;\n    padding: 10px; }\n  .homebtn {\n  margin: 40px 0; }\n"
+module.exports = ".singleNews {\n  margin-bottom: 15px; }\n  .singleNews img {\n    height: 200px; }\n  .singleNews mat-card-title {\n    font-size: 16px;\n    font-weight: bold; }\n  .singleNews .cardbody {\n    height: 100px;\n    overflow-y: auto;\n    margin: 0 -15px;\n    padding: 10px; }\n  .homebtn {\n  margin: 40px 0; }\n  .example-card {\n  max-width: 400px; }\n"
 
 /***/ }),
 
@@ -233,6 +237,7 @@ module.exports = ".singleNews {\n  margin-bottom: 15px; }\n  .singleNews img {\n
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_news_service__ = __webpack_require__("./src/app/services/news.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material_dialog__ = __webpack_require__("./node_modules/@angular/material/esm5/dialog.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -242,20 +247,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
 
 
 
 
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(httpClient, dialog) {
+    function HomeComponent(httpClient, dialog, newsService, _sanitizer) {
         this.httpClient = httpClient;
         this.dialog = dialog;
+        this.newsService = newsService;
+        this._sanitizer = _sanitizer;
         this.news = [];
+        this.availableColors = [
+            { id: "10000", name: 'सरगुजा', color: 'primary', state: true },
+            { id: "10001", name: 'भारत', color: 'warn', state: false },
+            { id: "10002", name: 'विदेश', color: 'primary', state: false },
+            { id: "10003", name: 'मनोरंजन', color: 'warn', state: false },
+            { id: "10004", name: 'गरम वीडियो', color: 'primary', state: false },
+            { id: "10005", name: 'सरकारी नौकरी', color: 'warn', state: false }
+        ];
     }
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.httpClient.get("assets/newsfeed.json").subscribe(function (data) {
-            console.log(data);
+            // console.log(data);
             _this.news = data;
         });
         // this.newsService.getTopHeadLines()
@@ -263,8 +282,59 @@ var HomeComponent = /** @class */ (function () {
         // 		response => this.news = response.json()
         // );
     };
-    HomeComponent.prototype.openDialog = function () {
-        var dialogRef = this.dialog.open(DialogContentExampleDialog);
+    HomeComponent.prototype.changeSelected = function (e) {
+        var _this = this;
+        this.news = [];
+        this.category = e.source._elementRef.nativeElement.id;
+        for (var i = 0; i < this.availableColors.length; i++) {
+            var chip = this.availableColors[i];
+            if (chip.id == this.category) {
+                // alert("selected");
+                chip.state = true;
+            }
+        }
+        if (this.category == "10002" && e.selected) {
+            this.newsService.getTopHeadLines()
+                .subscribe(function (response) { return _this.news = response.json(); });
+        }
+        if (this.category == "10001" && e.selected) {
+            this.newsService.getTopInHeadLines()
+                .subscribe(function (response) { return _this.news = response.json(); });
+            //   this.newsService.getNewBySource("google-news-in")
+            //  .subscribe(
+            //    response => this.news = response.json());
+        }
+        if (this.category == "10003" && e.selected) {
+            this.newsService.getTopEntertainmentHeadLines()
+                .subscribe(function (response) { return _this.news = response.json(); });
+            //   this.newsService.getNewBySource("google-news-in")
+            //  .subscribe(
+            //    response => this.news = response.json());
+        }
+        else if (this.category == "10004" && e.selected) {
+            // this.httpClient.get("assets/hot_video_newsfeed.json").subscribe(data =>{    
+            //   this.news =  data;
+            //   this.safeURL = "https://www.youtube.com/watch?v=JFcgOboQZ08&list=RDJFcgOboQZ08&start_radio=1";
+            //   //this._sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/watch?v=Pdfvy-kSEbU&list=RDPdfvy-kSEbU&start_radio=");
+            // })
+        }
+        else {
+            this.httpClient.get("assets/newsfeed.json").subscribe(function (data) {
+                _this.news = data;
+                e.selected = true;
+            });
+        }
+        this.selected = e.value;
+    };
+    HomeComponent.prototype.openDialog = function (post) {
+        // console.log("testingf"+JSON.stringify(post));
+        var dialogRef = this.dialog.open(DialogContentExampleDialog, {
+            data: {
+                title: post.title,
+                topImage: post.urlToImage,
+                content: post.content,
+            }
+        });
         dialogRef.afterClosed().subscribe(function (result) {
             console.log("Dialog result: " + result);
         });
@@ -276,19 +346,24 @@ var HomeComponent = /** @class */ (function () {
             styles: [__webpack_require__("./src/app/home/home.component.scss")],
             providers: [__WEBPACK_IMPORTED_MODULE_1__services_news_service__["a" /* NewsService */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__angular_material_dialog__["a" /* MatDialog */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__angular_material_dialog__["b" /* MatDialog */],
+            __WEBPACK_IMPORTED_MODULE_1__services_news_service__["a" /* NewsService */], __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__["c" /* DomSanitizer */]])
     ], HomeComponent);
     return HomeComponent;
 }());
 
 var DialogContentExampleDialog = /** @class */ (function () {
-    function DialogContentExampleDialog() {
+    function DialogContentExampleDialog(data) {
+        this.data = data;
+        // console.log("testing1"+JSON.stringify(data));
     }
     DialogContentExampleDialog = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'dialog-content-example-dialog',
             template: __webpack_require__("./src/app/home/dialog-content-example-dialog.html"),
-        })
+        }),
+        __param(0, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Inject */])(__WEBPACK_IMPORTED_MODULE_3__angular_material_dialog__["a" /* MAT_DIALOG_DATA */])),
+        __metadata("design:paramtypes", [Object])
     ], DialogContentExampleDialog);
     return DialogContentExampleDialog;
 }());
@@ -377,7 +452,7 @@ var MaterialModule = /** @class */ (function () {
 /***/ "./src/app/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\r\n  <mat-toolbar-row>\r\n\r\n    <section class=\"wrapper\">\r\n  \r\n \r\n  \r\n      <h2 class=\"sentence\">\r\n        <div class=\"pushEffect\">\r\n          <span>MorSurguja</span>\r\n          <span>Surguja</span>      \r\n          <span>मोरसरगुजा</span>\r\n          <span>Fast News</span>\r\n    \r\n      \r\n        </div>\r\n      </h2>\r\n     \r\n    </section>\r\n    \r\n\r\n    <!-- <span>Morsurguja</span> -->\r\n    <span class=\"example-spacer\"></span>\r\n   \r\n\r\n    <a class=\"example-link\" routerLink=\"/\" mat-button></a>\r\n    <!-- <a class=\"example-link\" routerLink=\"/posts\" mat-button>Posts</a> -->\r\n    <!-- <a class=\"example-link\" href=\"https://github.com/geeksamu/angular-5-article-series\" mat-button>\r\n      <mat-icon>star</mat-icon>  \r\n      Github\r\n    </a> -->\r\n    <mat-slide-toggle [checked]=\"isThemeDark | async\" (change)=\"toggleDarkTheme($event.checked)\">Dark theme</mat-slide-toggle>\r\n  </mat-toolbar-row>\r\n</mat-toolbar>\r\n"
+module.exports = "<mat-toolbar color=\"primary\">\r\n\r\n  <mat-toolbar-row>\r\n    <section class=\"wrapper\">\r\n      <h2 class=\"sentence\">\r\n        <div class=\"pushEffect\">              \r\n          <span>मोरसरगुजा</span>\r\n          <span>MorSurguja</span>    \r\n          <span>Fast News</span>\r\n        </div>\r\n      </h2>     \r\n    </section>\r\n    \r\n\r\n    <!-- <span>Morsurguja</span> -->\r\n    <span class=\"example-spacer\"></span>\r\n   \r\n\r\n    <a class=\"example-link\" routerLink=\"/\" mat-button></a>\r\n\r\n\r\n    \r\n\r\n    <!-- <mat-chip  selected [color]=\"accent\">\r\n      मनोरंजन\r\n    </mat-chip> -->\r\n  <!-- </mat-chip-list> -->\r\n  <a class=\"example-link\" routerLink=\"/\" mat-button color=\"warn\"><mat-icon>menu</mat-icon></a>\r\n    <!-- <button mat-button (click)=\"sidenav.open()\" ><mat-icon>menu</mat-icon></button> -->\r\n\r\n    <a class=\"example-link\" routerLink=\"/posts\"  mat-button color=\"warn\">Explore</a>\r\n  \r\n    <!-- <a class=\"example-link\" routerLink=\"/posts\" mat-button>Posts</a> -->\r\n    <!-- <a class=\"example-link\" href=\"https://github.com/geeksamu/angular-5-article-series\" mat-button>\r\n      <mat-icon>star</mat-icon>  \r\n      Github\r\n    </a> -->\r\n    <!-- <mat-slide-toggle [checked]=\"isThemeDark | async\" (change)=\"toggleDarkTheme($event.checked)\">Dark theme</mat-slide-toggle> -->\r\n  </mat-toolbar-row>\r\n</mat-toolbar>\r\n"
 
 /***/ }),
 
@@ -409,9 +484,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var NavbarComponent = /** @class */ (function () {
     function NavbarComponent(themeService) {
         this.themeService = themeService;
+        this.availableColors = [
+            { name: 'भारत', color: 'warn' },
+            { name: 'विदेश', color: 'primary' },
+            { name: 'मनोरंजन', color: 'warn' },
+            { name: 'गरम वीडियो', color: 'primary' },
+            { name: 'सरकारी नौकरी', color: 'warn' }
+        ];
     }
     NavbarComponent.prototype.ngOnInit = function () {
-        this.isThemeDark = this.themeService.isThemeDark;
+        //this.isThemeDark = this.themeService.isThemeDark;
+        this.themeService.setDarkTheme(true);
     };
     NavbarComponent.prototype.toggleDarkTheme = function (checked) {
         this.themeService.setDarkTheme(checked);
@@ -434,7 +517,7 @@ var NavbarComponent = /** @class */ (function () {
 /***/ "./src/app/posts/posts.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container margin-top\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n  <mat-card class=\"filter\">\r\n    <form #filternewsForm=\"ngForm\">\r\n      <mat-form-field>\r\n        <mat-select placeholder=\"News Source\" [(ngModel)]='filterSource' name=\"source\" required>\r\n          <mat-option *ngFor=\"let source of newsSources.sources\" [value]=\"source.id\">\r\n            {{source.name}} - {{ source.language }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n      <button mat-raised-button color=\"primary\" (click)='filterNews(filterSource)' [disabled]=\"!filternewsForm.form.valid\">Filter News to\r\n        <span style=\"text-transform: capitalize; \">{{filterSource}}</span>\r\n      </button>\r\n\r\n    </form>\r\n  </mat-card>\r\n</div>\r\n\r\n<div class=\"loader\" *ngIf=\"!((news.articles)?.length > 0)\">\r\n    <mat-spinner></mat-spinner>\r\n  </div>\r\n<div class=\"container\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n  <div *ngFor=\"let post of news.articles\" fxFlex=\"20%\">\r\n\r\n    <mat-card class=singleNews>\r\n      <img mat-card-image src=\"{{post.urlToImage}}\" onError=\"this.src='/assets/blank.png';\">\r\n      <div class=\"cardbody\">\r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <p>{{post.description}}</p>\r\n        </mat-card-content>\r\n      </div>\r\n\r\n      <mat-card-actions align=\"end\">\r\n        <a href=\"{{post.url}}\" target=\"_balnk\" mat-raised-button color=\"accent\">Read More</a>\r\n      </mat-card-actions>\r\n    </mat-card>\r\n\r\n  </div>\r\n\r\n</div>\r\n"
+module.exports = "<!-- <div class=\"container margin-top\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n  <mat-card class=\"filter\">\r\n    <form #filternewsForm=\"ngForm\">\r\n      <mat-form-field>\r\n        <mat-select placeholder=\"News Source\" [(ngModel)]='filterSource' name=\"source\" required>\r\n          <mat-option *ngFor=\"let source of newsSources.sources\" [value]=\"source.id\">\r\n            {{source.name}} - {{ source.language }}\r\n          </mat-option>\r\n        </mat-select>\r\n      </mat-form-field>\r\n      <button mat-raised-button color=\"primary\" (click)='filterNews(filterSource)' [disabled]=\"!filternewsForm.form.valid\">Filter News to\r\n        <span style=\"text-transform: capitalize; \">{{filterSource}}</span>\r\n      </button>\r\n\r\n    </form>\r\n  </mat-card>\r\n</div>\r\n\r\n<div class=\"loader\" *ngIf=\"!((news.articles)?.length > 0)\">\r\n    <mat-spinner></mat-spinner>\r\n  </div>\r\n<div class=\"container\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"1%\" fxLayoutAlign=\"center\">\r\n  <div *ngFor=\"let post of news.articles\" fxFlex=\"20%\">\r\n\r\n    <mat-card class=singleNews>\r\n      <img mat-card-image src=\"{{post.urlToImage}}\" onError=\"this.src='/assets/blank.png';\">\r\n      <div class=\"cardbody\">\r\n        <mat-card-title>{{post.title}}</mat-card-title>\r\n        <mat-card-content>\r\n          <p>{{post.description}}</p>\r\n        </mat-card-content>\r\n      </div>\r\n\r\n      <mat-card-actions align=\"end\">\r\n        <a href=\"{{post.url}}\" target=\"_balnk\" mat-raised-button color=\"accent\">Read More</a>\r\n      </mat-card-actions>\r\n    </mat-card>\r\n\r\n  </div>\r\n\r\n</div> -->\r\n\r\n<div class=\"container\" fxLayout=\"wrap row\" fxLayout.xs=\"column\" fxLayoutGap=\"10%\" fxLayoutAlign=\"center\">\r\n  <mat-chip-list>\r\n    <mat-chip *ngFor=\"let chip of availableColors\" selected [color]=\"chip.color\">\r\n      {{chip.name}}\r\n    </mat-chip>\r\n  </mat-chip-list>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -469,6 +552,13 @@ var PostsComponent = /** @class */ (function () {
         this.news = { articles: [] };
         this.newsSources = { sources: [] };
         this.filterSource = 'google-news';
+        this.availableColors = [
+            { name: 'भारत', color: 'warn' },
+            { name: 'विदेश', color: 'accent' },
+            { name: 'मनोरंजन', color: 'warn' },
+            { name: 'गरम वीडियो', color: 'accent' },
+            { name: 'सरकारी नौकरी', color: 'warn' }
+        ];
     }
     PostsComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -530,6 +620,12 @@ var NewsService = /** @class */ (function () {
     }
     NewsService.prototype.getTopHeadLines = function () {
         return this.http.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=' + this.key);
+    };
+    NewsService.prototype.getTopInHeadLines = function () {
+        return this.http.get('https://newsapi.org/v2/top-headlines?country=in&apiKey=' + this.key);
+    };
+    NewsService.prototype.getTopEntertainmentHeadLines = function () {
+        return this.http.get('https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=' + this.key);
     };
     NewsService.prototype.getNewBySource = function (source) {
         return this.http.get('https://newsapi.org/v2/top-headlines?sources=' + source + '&apiKey=' + this.key);
