@@ -1,0 +1,122 @@
+{
+    "status": "ok",
+    "totalResults": 70,
+    "articles": [
+        {
+            "source": {
+                "id": "cbs-news",
+                "name": "CBS News"
+            },
+            "author": "Kate Gibson",
+            "title": "यूरोप के कई देशों में पहुँचा कोरोना वायरस का नया स्ट्रेन, बढ़ी चिंता",
+            "description": "स्पेन, स्वीडन और स्विटज़रलैंड ने बताया है कि ब्रिटेन की यात्रा से लौटे उसके नागरिकों के कोरोना वायरस के नए वैरिएंट से संक्रमित होने की पुष्टि हुई है. इस बीच 40 से ज़्यादा देशों ने इस महीने ब्रिटेन से आने वाली उड़ानों पर प्रतिबंध लगा दिया है.",
+            "url": "https://www.cbsnews.com/news/home-depot-recalled-ceiling-fans-blades-spin-off/",
+            "urlToImage": "https://ichef.bbci.co.uk/news/800/cpsprodpb/4E12/production/_116268991_gettyimages-1286151329.jpg",
+            "publishedAt": "2020-12-29T12:26:00Z",
+            "content": "यूरोप के कई देशों ने अपने यहाँ कोरोना वायरस के नए और ज़्यादा संक्रामक वैरिएंट के पाए जाने की पुष्टि की है. ये वायरस का वही स्ट्रेन है जिसकी पहचान सबसे पहले ब्रिटेन में हुई थी."
+        },        
+        {
+            "source": {
+                "id": "cbs-news",
+                "name": "CBS News"
+            },
+            "author": "Kate Gibson",
+            "title": "कोविड वैक्सीनः क्या है कोरोना के टीके का ड्राई रन?",
+            "description": "भारत ने कोविड-19 की वैक्सीन लगाए जाने की मुहिम शुरू करने से पहले की तैयारियां चालू कर दी हैं.",
+            "url": "https://www.cbsnews.com/news/home-depot-recalled-ceiling-fans-blades-spin-off/",
+            "urlToImage": "https://ichef.bbci.co.uk/news/800/cpsprodpb/4E12/production/_116268991_gettyimages-1286151329.jpg",
+            "publishedAt": "2020-12-29T12:26:00Z",
+            "content": "इसके तहत देश के चार राज्यों- असम, आंध्र प्रदेश, गुजरात और पंजाब में कोविड-19 वैक्सीन का ड्राई रन सोमवार, 28 दिसंबर से शुरू कर दिया गया है. ये ड्राई रन दो दिन चलाया जाना है.आंध्र प्रदेश के कृष्णा ज़िले, गुजरात में राजकोट और गांधीनगर, पंजाब में लुधियाना और शहीद भगत सिंह नगर (नवांशहर) और असम के सोनितपुर और नलबाड़ी में ये मुहिम चलाई जा रही है."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MarketWatch"
+            },
+          
+            "title": "बॉक्सिंग डे टेस्ट मैच' में ऑस्ट्रेलिया पर भारत की जीत के सितारे",
+            "description": "भारत ने कोविड-19 की वैक्सीन लगाए जाने की मुहिम शुरू करने से पहले की तैयारियां चालू कर दी हैं.",
+            "url": "https://www.marketwatch.com/story/tentative-sign-of-sentiment-shift-heres-the-buzzy-part-of-the-market-that-didnt-join-the-race-to-records-after-the-stimulus-bill-signing-11609242097",
+            "urlToImage": "https://images.mktw.net/im-278767/social",
+            "publishedAt": "2020-12-29T11:41:00Z",
+            "content": "While the S&amp;P 500 \r\n SPX,\r\n +0.87%\r\nand Nasdaq Composite \r\n COMP,\r\n +0.74%\r\nset new records on Monday with the $908 billion U.S. stimulus bill finally signed into law, there were a few segments n… [+3706 chars]"
+        },
+        {
+            "source": {
+                "id": "the-wall-street-journal",
+                "name": "The Wall Street Journal"
+            },
+           
+            "title": "किसान आंदोलन का एक महीना: हाइवे को बनाया घर, सरकार पीछे हटने को राज़ी नहीं",
+            "description": "केंद्र सरकार और प्रदर्शनकारी किसानों के बीच बुधवार को छठे चरण की बातचीत शुरू हो गई है.",
+            "url": "https://www.wsj.com/articles/global-stock-markets-dow-update-12-29-2020-11609237095",
+            "urlToImage": "https://ichef.bbci.co.uk/news/800/cpsprodpb/56B8/production/_116300222_hi064544150.jpg",
+            "publishedAt": "2020-12-29T11:33:00Z",
+            "content": "U.S. stock futures ticked up Tuesday, suggesting that the major benchmarks may extend their rally a day after closing at records.\r\nFutures tied to the S&amp;P 500 and the Dow Jones Industrial Average… [+957 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNBC"
+            },
+         
+            "title": "ममता बनर्जी की 'फ़ाइटर' इमेज के आगे बीजेपी का पलड़ा कितना भारी",
+            "description": "ममता बनर्जी की 'फ़ाइटर' इमेज के आगे बीजेपी का पलड़ा कितना भारी.",
+            "url": "https://www.cnbc.com/2020/12/29/graphcore-raises-222-million-to-take-on-nvidia-with-ai-chips.html",
+            "urlToImage": "https://ichef.bbci.co.uk/news/800/cpsprodpb/13947/production/_116299108_7946557f-5db6-49b2-adcb-b37fa77d7a68.jpg",
+            "publishedAt": "2020-12-29T11:25:00Z",
+            "content": "Graphcore founders Simon Knowles and Nigel Toon\r\nLONDON U.K.-based chipmaker Graphcore announced Tuesday that it had raised $222 million of investment as it looks to take on U.S rivals Nvidia and Int… [+4842 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNBC"
+            },
+           
+            "title": "यूपी में योगी सरकार पर पूर्व नौकरशाहों ने लगाए नफ़रत फैलाने के आरोप, भाजपा का पलटवार",
+            "description": "104 पूर्व नौकरशाहों ने यूपी के मुख्यमंत्री को संबोधित करते हुए धर्मांतरण अध्यादेश के विरोध में एक पत्र लिखा है. लेकिन बीजेपी का कहना है कि योगी आदित्यनाथ आगे भी इसी अंदाज़ में काम करते रहेंगे.",
+            "url": "https://www.cnbc.com/2020/12/29/737-max-returns-to-the-us-after-deadly-crashes.html",
+            "urlToImage": "https://ichef.bbci.co.uk/news/800/cpsprodpb/F2F8/production/_116300226_20201213164l.jpg",
+            "publishedAt": "2020-12-29T11:00:00Z",
+            "content": "देश के कई महत्वपूर्ण पदों पर रह चुके सौ से ज़्यादा रिटायर्ड नौकरशाहों ने एक दिन पहले उत्तर प्रदेश के मुख्यमंत्री योगी आदित्यनाथ को पत्र लिखकर राज्य की क़ानून-व्यवस्था पर चिंता जताई थी और राज्य सरकार से ग़ैर-क़ानूनी धर्मांतरण अध्यादेश को वापस लेने की माँग की थी लेकिन यूपी सरकार और भारतीय जनता पार्टी ने इस चिंता और इनकी आपत्तियों को सिरे से ख़ारिज कर दिया है.उत्तर प्रदेश के मुख्यमंत्री योगी आदित्यनाथ के सूचना सलाहकार और राज्य बीजेपी के प्रवक्ता शलभमणि त्रिपाठी का कहना है कि योगी आदित्यनाथ आगे भी इसी अंदाज़ में काम करते रहेंगे. शलभमणि त्रिपाठी पत्र लिखने वाले इन पूर्व नौकरशाहों पर भी सवाल उठाते हैं."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "WGHP FOX 8 Greensboro"
+            },
+      
+            "title": "गोबर उठाने से जज बनने तक का सफ़र",
+            "description": "मैंने पिता को लोगों से डांट खाते सुना है. गली-गली कचरा उठाते देखा है, हम भाई-बहनों की अच्छी पढ़ाई के लिए हर जगह अपमानित होते देखा. स्कूल के दिनों में शर्म आती थी बताने में कि हमारे पिता दूध बेचते हैं, लेकिन आज मुझे गर्व हो रहा है कि मैं इस परिवार की बेटी हूं",
+            "url": "https://myfox8.com/news/man-dies-at-hospital-after-shot-fired-on-gate-city-boulevard-in-greensboro/",
+            "urlToImage": "https://ichef.bbci.co.uk/news/800/cpsprodpb/1398D/production/_116296208_4.jpg",
+            "publishedAt": "2020-12-29T10:57:00Z",
+            "content": "मैंने पिता को लोगों से डांट खाते सुना है. गली-गली कचरा उठाते देखा है, हम भाई-बहनों की अच्छी पढ़ाई के लिए हर जगह अपमानित होते देखा. स्कूल के दिनों में शर्म आती थी बताने में कि हमारे पिता दूध बेचते हैं, लेकिन आज मुझे गर्व हो रहा है कि मैं इस परिवार की बेटी हूं. यह महज़ शब्द नहीं, बल्कि दर्द से गर्व महसूस होने तक के सफ़र की पूरी कहानी है...चौथी क्लास से लेकर अभी तक गाय-भैंसों का गोबर उठाने से ही दिन की शुरुआत हुआ करती है. लेकिन, बेहद जल्द लोगों को न्याय देने के सफ़र की शुरुआत पर हैं राजस्थान में झीलों की नगरी उदयपुर की 26 साल की सोनल शर्मा."
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CoinDesk"
+            },
+           
+            "title": "किसान आंदोलन का एक महीना: हाइवे को बनाया घर, सरकार पीछे हटने को राज़ी नहीं",
+            "description": "भारत ने कोविड-19 की वैक्सीन लगाए जाने की मुहिम शुरू करने से पहले की तैयारियां चालू कर दी हैं.",
+            "url": "https://www.coindesk.com/india-mulls-imposing-18-transaction-tax-on-bitcoin-transactions",
+            "urlToImage": "https://static.coindesk.com/wp-content/uploads/2017/12/shutterstock_538428688-1000x628.jpg",
+            "publishedAt": "2020-12-29T10:41:55Z",
+            "content": "The Indian government is considering a bitcoin transaction tax that would add $1 billion in revenue a year, a move some industry participants said is a sign of the government’s growing comfort with c… [+1924 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "YouTube"
+            },         
+            "title": "किसान आंदोलन का एक महीना: हाइवे को बनाया घर, सरकार पीछे हटने को राज़ी नहीं",
+            "description": "भारत ने कोविड-19 की वैक्सीन लगाए जाने की मुहिम शुरू करने से पहले की तैयारियां चालू कर दी हैं.",
+            "url": "https://www.youtube.com/watch?v=NE-x7CLe5X8",
+            "urlToImage": "https://i.ytimg.com/vi/NE-x7CLe5X8/maxresdefault.jpg",
+            "publishedAt": "2020-12-29T05:14:02Z",
+            "content": null
+        }
+    ]
+}
