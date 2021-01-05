@@ -44,7 +44,7 @@
             "type": "tweet",
             "content": "Choreographer-turned-director Remo D’Souza, who is recuperating after suffering a major heart attack, recently opened up about the life-altering event. Recalling the day it happened, Remo told Bomba… [+1590 chars]"
         },
-     {
+        {
             "source": {
                 "id": null,
                 "name": "twitter"
@@ -57,7 +57,7 @@
             "publishedAt": "2020-12-30T14:18:07Z",
             "type": "youtube",
             "content": "Choreographer-turned-director Remo D’Souza, who is recuperating after suffering a major heart attack, recently opened up about the life-altering event. Recalling the day it happened, Remo told Bomba… [+1590 chars]"
-        },      
+        },
         {
             "source": {
                 "id": null,
@@ -71,7 +71,7 @@
             "publishedAt": "2020-12-30T14:18:07Z",
             "type": "youtube",
             "content": "Choreographer-turned-director Remo D’Souza, who is recuperating after suffering a major heart attack, recently opened up about the life-altering event. Recalling the day it happened, Remo told Bomba… [+1590 chars]"
-        },           
+        },
         {
             "source": {
                 "id": null,
@@ -85,6 +85,6 @@
             "publishedAt": "2020-12-30T14:18:07Z",
             "type": "timeline",
             "content": "Choreographer-turned-director Remo D’Souza, who is recuperating after suffering a major heart attack, recently opened up about the life-altering event. Recalling the day it happened, Remo told Bomba… [+1590 chars]"
-        }  
+        }
     ]
 }
